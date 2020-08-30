@@ -722,7 +722,7 @@
       <upward>0 1 0</upward>
       <link_name>rotor_3</link_name>
     </plugin>
-<plugin name="rotor_3_blade_1" filename="libLiftDragPlugin.so">
+<plugin name="rotor_3_blade_2" filename="libLiftDragPlugin.so">
       <a0>0.3</a0>
       <alpha_stall>1.4</alpha_stall>
       <cla>4.2500</cla>
