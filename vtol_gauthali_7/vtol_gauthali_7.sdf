@@ -55,7 +55,7 @@
       </sensor>
     </link>
     <joint name='vtol_gauthali_7/imu_joint' type='revolute'>
-      <child>gauthali_vtol_6/imu_link</child>
+      <child>vtol_gauthali_7/imu_link</child>
       <parent>base_link</parent>
       <axis>
         <xyz>1 0 0</xyz>
@@ -771,7 +771,7 @@
       -->
       <modelXYZToAirplaneXForwardZDown>0 0 0 3.141593 0 0</modelXYZToAirplaneXForwardZDown>
       <gazeboXYZToNED>0 0 0 3.141593 0 0</gazeboXYZToNED>
-      <imuName>gauthali_vtol_6/imu_link::imu_sensor</imuName>
+      <imuName>vtol_gauthali_7/imu_link::imu_sensor</imuName>
       <connectionTimeoutMaxCount>5</connectionTimeoutMaxCount>
       <!-- <control channel="2">
         
