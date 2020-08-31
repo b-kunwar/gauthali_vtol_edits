@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="vtol_gauthali_7">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.11856 -0.056508 8.1272E-06"
+        rpy="0 0 0" />
+      <mass
+        value="9.2977" />
+      <inertia
+        ixx="0.32593"
+        ixy="-0.013555"
+        ixz="-7.8276E-06"
+        iyy="0.52764"
+        iyz="-1.5075E-06"
+        izz="0.25239" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.69804 0.69804 0.69804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_ruddervator">
+    <inertial>
+      <origin
+        xyz="0.029088 -0.0071511 0.0084768"
+        rpy="0 0 0" />
+      <mass
+        value="0.011825" />
+      <inertia
+        ixx="0.0002244"
+        ixy="3.7585E-10"
+        ixz="-1.8506E-06"
+        iyy="0.00022971"
+        iyz="-5.9334E-09"
+        izz="5.7467E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/left_ruddervator.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.98824 0.73725 0.51765 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/left_ruddervator.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ruddervator_joint"
+    type="revolute">
+    <origin
+      xyz="1.3278 -0.17783 0.17783"
+      rpy="2.3562 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_ruddervator" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.53"
+      upper="0.53"
+      effort="-1"
+      velocity="-1" />
+  </joint>
+  <link
+    name="left_aileron">
+    <inertial>
+      <origin
+        xyz="0.017378 -0.008312 0.45424"
+        rpy="0 0 0" />
+      <mass
+        value="0.0090385" />
+      <inertia
+        ixx="0.00063296"
+        ixy="3.822E-07"
+        ixz="-1.7169E-07"
+        iyy="0.00063438"
+        iyz="4.2676E-07"
+        izz="1.7477E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/left_aileron.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.69804 0.69804 0.69804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/left_aileron.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_aileron_joint"
+    type="revolute">
+    <origin
+      xyz="0.28599 -0.38 0.006356"
+      rpy="1.5708 -0.29369 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_aileron" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.53"
+      upper="0.53"
+      effort="-1"
+      velocity="-1" />
+  </joint>
+  <link
+    name="right_aileron">
+    <inertial>
+      <origin
+        xyz="0.017379 -0.008312 -0.45424"
+        rpy="0 0 0" />
+      <mass
+        value="0.0090385" />
+      <inertia
+        ixx="0.00063296"
+        ixy="3.822E-07"
+        ixz="1.716E-07"
+        iyy="0.00063439"
+        iyz="-4.2675E-07"
+        izz="1.7477E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/right_aileron.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.69804 0.69804 0.69804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/right_aileron.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_aileron_joint"
+    type="revolute">
+    <origin
+      xyz="0.28599 0.38 0.006356"
+      rpy="1.5708 -0.59602 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_aileron" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.53"
+      upper="0.53"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="rotor_0">
+    <inertial>
+      <origin
+        xyz="-1.0421E-08 0.015147 1.1155E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.067297" />
+      <inertia
+        ixx="0.0014426"
+        ixy="9.0561E-13"
+        ixz="6.2334E-05"
+        iyy="0.0014525"
+        iyz="-9.2603E-13"
+        izz="1.1315E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/rotor_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/rotor_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_0_joint"
+    type="continuous">
+    <origin
+      xyz="-0.564 0.35355 0.0064134"
+      rpy="1.5708 0 0.011221" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_0" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="rotor_1">
+    <inertial>
+      <origin
+        xyz="-1.0351E-08 0.015147 1.1846E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.067297" />
+      <inertia
+        ixx="0.0014426"
+        ixy="9.1437E-13"
+        ixz="6.2334E-05"
+        iyy="0.0014525"
+        iyz="-9.5513E-13"
+        izz="1.1315E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/rotor_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/rotor_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_1_joint"
+    type="continuous">
+    <origin
+      xyz="0.836 -0.35355 0.0064134"
+      rpy="1.5708 0 -3.1388" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_1" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="rotor_2">
+    <inertial>
+      <origin
+        xyz="5.86620441112018E-09 0.0151465718936908 -8.54540862516018E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0672986280068749" />
+      <inertia
+        ixx="0.00144267438153412"
+        ixy="-2.29423563841152E-13"
+        ixz="-6.233189805481E-05"
+        iyy="0.00145259644276815"
+        iyz="9.36362550848137E-12"
+        izz="1.13152021358967E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/rotor_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/rotor_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_2_joint"
+    type="continuous">
+    <origin
+      xyz="-0.564 -0.35355 0.0064134"
+      rpy="1.5708 0 -0.091662" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="rotor_3">
+    <inertial>
+      <origin
+        xyz="1.9021E-09 0.015147 1.9183E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.067298" />
+      <inertia
+        ixx="0.0014426"
+        ixy="3.0472E-13"
+        ixz="-6.2331E-05"
+        iyy="0.0014526"
+        iyz="2.8078E-13"
+        izz="1.1315E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/rotor_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/rotor_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_3_joint"
+    type="continuous">
+    <origin
+      xyz="0.836 0.35355 0.0064134"
+      rpy="1.5708 0 -3.1164" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="right_ruddervator">
+    <inertial>
+      <origin
+        xyz="0.029088 -0.0084763 0.0071511"
+        rpy="0 0 0" />
+      <mass
+        value="0.011825" />
+      <inertia
+        ixx="0.00022439"
+        ixy="1.8506E-06"
+        ixz="-3.6772E-10"
+        iyy="5.7467E-06"
+        iyz="-5.9487E-09"
+        izz="0.00022971" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/right_ruddervator.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.98824 0.73725 0.51765 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/right_ruddervator.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ruddervator_joint"
+    type="revolute">
+    <origin
+      xyz="1.3278 0.17783 0.17783"
+      rpy="2.3562 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_ruddervator" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.53"
+      upper="0.53"
+      effort="-1"
+      velocity="-1" />
+  </joint>
+  <link
+    name="rotor_pusher">
+    <inertial>
+      <origin
+        xyz="1.8932E-09 -0.0128 -4.8575E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.18697" />
+      <inertia
+        ixx="0.004287"
+        ixy="-2.3985E-11"
+        ixz="0.0009704"
+        iyy="0.0045337"
+        iyz="-4.8833E-11"
+        izz="0.00025725" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/rotor_pusher.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol_gauthali_7/meshes/rotor_pusher.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_pusher_joint"
+    type="continuous">
+    <origin
+      xyz="0.50018 0 -0.058605"
+      rpy="0 -1.2758 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_pusher" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>
