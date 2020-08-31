@@ -34,7 +34,7 @@
         </geometry>
       </visual>
     </link>
- <link name='gauthali_vtol_6/imu_link'>
+ <link name='vtol_gauthali_7/imu_link'>
       <pose>0 0 0 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
@@ -54,7 +54,7 @@
         <update_rate>1000.0</update_rate>
       </sensor>
     </link>
-    <joint name='gauthali_vtol_6/imu_joint' type='revolute'>
+    <joint name='vtol_gauthali_7/imu_joint' type='revolute'>
       <child>gauthali_vtol_6/imu_link</child>
       <parent>base_link</parent>
       <axis>
