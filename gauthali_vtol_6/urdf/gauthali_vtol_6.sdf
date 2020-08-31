@@ -547,11 +547,11 @@
       <cla_stall>-3.85</cla_stall>
       <cda_stall>-0.9233984055</cda_stall>
       <cma_stall>0</cma_stall>
-      <cp>0.090 0 0.200</cp>
+      <cp>1.25 -0.1414 0.2021</cp>
       <area>0.075</area>
       <air_density>1.2041</air_density>
       <forward>-1 0 0</forward>
-      <upward>0 1 0</upward>
+      <upward>0 -0.707 0.707</upward>
       <link_name>body</link_name>
       <control_joint_name>
         left_ruddevator_joint
@@ -567,11 +567,11 @@
       <cla_stall>-3.85</cla_stall>
       <cda_stall>-0.9233984055</cda_stall>
       <cma_stall>0</cma_stall>
-      <cp>0.090 0 0.200</cp>
+      <cp>1.25 0.1414 0.2021</cp>
       <area>0.075</area>
       <air_density>1.2041</air_density>
       <forward>-1 0 0</forward>
-      <upward>0 1 0</upward>
+      <upward>0 -0.707 0.707</upward>
       <link_name>body</link_name>
       <control_joint_name>
         right_ruddevator_joint
