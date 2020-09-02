@@ -2,7 +2,7 @@
 <sdf version='1.6'>
   <model name='h_frame_2'>
     <link name='base_link'>
-     <velocity_decay>
+     <velocity_decay> <!--added such from iris sdf -->
         <linear>0.0</linear>
         <angular>0.0</angular>
       </velocity_decay>
