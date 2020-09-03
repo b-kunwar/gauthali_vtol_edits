@@ -503,7 +503,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://vtol_gauthali_10/meshes/rotor_pusher.STL</uri>
+            <uri>model://vtol_gauthali_11/meshes/rotor_pusher.STL</uri>
           </mesh>
         </geometry>
       </visual>
